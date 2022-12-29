@@ -15,4 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: |
+      echo "${{ secrets.mlops }}" | docker login -u 'csahin2086' --password-stdin
+      docker image build -t csahin2086/mlops-flaskapp:v1
+      docker push csahin2086/mlops-flaskapp:v1
