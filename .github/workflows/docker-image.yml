@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run:
           echo "${{ secrets.mlops }}"
-          docker image build -t csahin2086/mlops-flaskapp:v1 .
+          docker image build -t ceyhunmlops/mlops-flaskapp:v1 .
           docker push csahin2086/mlops-flaskapp:v1
