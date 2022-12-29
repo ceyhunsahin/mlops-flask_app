@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: echo "${{ secrets.mlops }}" && docker image build -t ceyhunmlops/mlopsflaskapp:v1 . && docker push ceyhunmlops/mlopsflaskapp:v1
+      run: echo "${{ secrets.mlops }}" && docker image build -t ceyhunmlops/mlops-flaskapp:v1 . && docker image push ceyhunmlops/mlops-flaskapp:v1
