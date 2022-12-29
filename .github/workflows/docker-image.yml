@@ -16,6 +16,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-          echo "${{ secrets.mlops }}" | docker login -u 'csahin2086' --password-stdin
+          echo "${{ secrets.mlops }}"
           docker image build -t csahin2086/mlops-flaskapp:v1
           docker push csahin2086/mlops-flaskapp:v1
