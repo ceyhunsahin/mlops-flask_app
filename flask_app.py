@@ -33,7 +33,7 @@ app.config["DEBUG"] = True
 @app.route ('/', methods=['GET'])
 def home():
     return "<h1>My first Flask API</h1><p>This site is a prototype API \
-    for home risk project 7 of OpenClassRooms DataScientist training. mlops_example</p>"
+    for home risk project 7 of OpenClassRooms DataScientist training. mlops_exemple</p>"
 
 # defining page for the results of a prediction via index
 @app.route ('/scores', methods=['GET'])
